@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="media/css/style.css" type="text/css" rel="stylesheet">
+    <title>Sitter Hours Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Enter hours and minutes in the boxes below and click submit for each day.</h1>
+        <p>The total will be displayed at the bottom.</p>
+    </header>
+    <main>
+        <section class='inputs flex_container'>
+            <div><span>Day 1: </span>
+            <label for ="hours1">Hours</label>
+            <input type="number" id="hours1" name="hours1">
+            <label for ="minutes1">Minutes</label>
+            <input type="number" id="minutes1" name="minutes1">
+            <br></div>
+            <div><span>Day 2: </span>
+            <label for ="hours2">Hours</label>
+            <input type="number" id="hours2" name="hours2">
+            <label for ="minutes2">Minutes</label>
+            <input type="number" id="minutes2" name="minutes2">
+            <br></div>
+            <div><span>Day 3: </span>
+            <label for ="hours3">Hours</label>
+            <input type="number" id="hours3" name="hours3">
+            <label for ="minutes3">Minutes</label>
+            <input type="number" id="minutes3" name="minutes3">
+            <br></div>
+            <div><span>Day 4: </span>
+            <label for ="hours4">Hours</label>
+            <input type="number" id="hours4" name="hours4">
+            <label for ="minutes4">Minutes</label>
+            <input type="number" id="minutes4" name="minutes4">
+            <br></div>
+            <div><span>Day 5: </span>
+            <label for ="hours5">Hours</label>
+            <input type="number" id="hours5" name="hours5">
+            <label for ="minutes5">Minutes</label>
+            <input type="number" id="minutes5" name="minutes5">
+            <br></div>
+            <div><span>Day 6: </span>
+            <label for ="hours6">Hours</label>
+            <input type="number" id="hours6" name="hours6">
+            <label for ="minutes6">Minutes</label>
+            <input type="number" id="minutes6" name="minutes6">
+            <br></div>
+            <div><span>Day 7: </span>
+            <label for ="hours7">Hours</label>
+            <input type="number" id="hours7" name="hours7">
+            <label for ="minutes7">Minutes</label>
+            <input type="number" id="minutes7" name="minutes7">
+            <br></div>
+            <div><span>Day 8: </span>
+            <label for ="hours8">Hours</label>
+            <input type="number" id="hours8" name="hours8">
+            <label for ="minutes8">Minutes</label>
+            <input type="number" id="minutes8" name="minutes8">
+            <br></div>
+            <div><span>Day 9: </span>
+            <label for ="hours9">Hours</label>
+            <input type="number" id="hours9" name="hours9">
+            <label for ="minutes9">Minutes</label>
+            <input type="number" id="minutes9" name="minutes9">
+            <br></div>
+            <div><span>Day 10: </span>
+            <label for ="hours10">Hours</label>
+            <input type="number" id="hours10" name="hours10">
+            <label for ="minutes10">Minutes</label>
+            <input type="number" id="minutes10" name="minutes10">
+            <br></div>
+        </section>
+
+        <div class='flex_container'> 
+            <input class='button' type="button" value="Submit" onclick="myFunction()">
+        </div>
+        
+        <!-- output field -->
+        <section class='total flex_container'>
+            <h2>Total: <br><span id="output">Blank</span></h2>
+        </section>
+    </main>
+</body>
+</html>
+
+
+<!-- script to move later -->
+<script>
+
+function myFunction() {
+    const hours1 = +document.getElementById('hours1').value;
+    const minutes1 = +document.getElementById('minutes1').value;
+    const hours2 = +document.getElementById('hours2').value;
+    const minutes2 = +document.getElementById('minutes2').value;
+    const hours3 = +document.getElementById('hours3').value;
+    const minutes3 = +document.getElementById('minutes3').value;
+    const hours4 = +document.getElementById('hours4').value;
+    const minutes4 = +document.getElementById('minutes4').value;
+    const hours5 = +document.getElementById('hours5').value;
+    const minutes5 = +document.getElementById('minutes5').value;
+    const hours6 = +document.getElementById('hours6').value;
+    const minutes6 = +document.getElementById('minutes6').value;
+    const hours7 = +document.getElementById('hours7').value;
+    const minutes7 = +document.getElementById('minutes7').value;
+    const hours8 = +document.getElementById('hours8').value;
+    const minutes8 = +document.getElementById('minutes8').value;
+    const hours9 = +document.getElementById('hours9').value;
+    const minutes9 = +document.getElementById('minutes9').value;
+    const hours10 = +document.getElementById('hours10').value;
+    const minutes10 = +document.getElementById('minutes10').value;
+
+    const hours = hours1 + hours2 + hours3 + hours4 + hours5 + hours6 + hours7 + hours8 +hours9 + hours10;
+    const minutes = minutes1 + minutes2 + minutes3 + minutes4 + minutes5 + minutes6 + minutes7 + minutes8 + minutes9 + minutes10;
+    document.getElementById("output").innerHTML = `Total hours: ${hours} <br> Total minutes: ${minutes}`;
+}
+</script>
