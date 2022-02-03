@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url("./images/ ")
 }
 
 header {
@@ -10,6 +11,11 @@ header {
 
 h1 {
     size: 30px;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-top: 0;
 }
 
 .inputs {
@@ -30,13 +36,16 @@ h1 {
 }
 
 .button{
-    font-size: 40px;
+    font-size: 20px;
+    display: inline-block;
     background-color: lightcoral;
     border-radius: 25%;
+    margin: 2px 4px;
+    padding: 10px 20px;
     border: 3px solid darkgray;
 }
 
-.button :hover {
+.button:hover {
     background-color: yellow;
 }
 
