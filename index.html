@@ -15,7 +15,7 @@
         <button onclick="testPopulate()">Populate fields for testing.</button>
     </header>
     <main>
-        <section class='inputs flex_container'>
+        <section class='inputs flex_col'>
             <div>
             <label for ="hours1">Hours</label>
             <input type="number" id="hours1" name="hours1">
@@ -78,13 +78,20 @@
             <br></div>
         </section>
 
-        <div class='flex_container'> 
+        <div class='flex_col'> 
             <input class='button' type="button" value="Calculate" onclick="myFunction()">
         </div>
         
         <!-- output field -->
-        <section class='total flex_container'>
-            <h2>Total: <br><span id="output">Blank</span></h2>
+        <section class='total flex_row>
+            
+            <div class="total-time">
+                <h2>Total: <br><span id="output-time">Blank</span></h2>
+            </div>
+            <div class="total-wage">
+                <h2>Total: <br><span id="output-wage">Blank</span></h2>
+            </div>
+
         </section>
     </main>
 </body>

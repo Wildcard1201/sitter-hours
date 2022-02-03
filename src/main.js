@@ -26,7 +26,7 @@ function myFunction() {
     const hours = hoursRaw + (Math.floor(minutesRaw/60));
     const minutes = (minutesRaw % 60);
 
-    document.getElementById("output").innerHTML = `${hours} hours <br> ${minutes} minutes`;
+    document.getElementById("output-time").innerHTML = `${hours} hours <br> ${minutes} minutes`;
 }
 
 function testPopulate() {
