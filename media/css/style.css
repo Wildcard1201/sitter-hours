@@ -62,7 +62,8 @@ h4 {
 
 .total {
     min-width: 20vw;
-    max-width: 40vw;
+    max-width: 35vw;
+    height: 120px;
     margin: auto;
     background-color: lightgray;
     border: 1px solid #0f0;
@@ -73,6 +74,12 @@ h4 {
     border: 1px solid #f0f;
     width: 50%;
     position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .total-card h4 {
@@ -82,4 +89,10 @@ h4 {
     padding: 3px;
     border: 1px dotted #fff;
     background-color: #ddd;
+}
+
+.card-output {
+    /* position: absolute; */
+    top: 20px;
+    left: 60px;
 }
