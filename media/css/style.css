@@ -74,3 +74,12 @@ h4 {
     width: 50%;
     position: relative;
 }
+
+.total-card h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px;
+    border: 1px dotted #fff;
+    background-color: #ddd;
+}
