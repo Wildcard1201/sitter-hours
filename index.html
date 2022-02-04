@@ -12,7 +12,8 @@
         <h1>Enter hours and minutes in the boxes below and click Calculate.</h1>
         <h4>(Refresh page to reset boxes.)</h4>
         <p>The total will be displayed at the bottom.</p>
-        <button onclick="testPopulate()">Populate fields for testing.</button>
+        <button id="reset">Reset</button>
+        <button id="populate" onclick="testPopulate()">Populate fields for testing.</button>
     </header>
     <main>
         <section class='inputs flex_col'>
@@ -76,6 +77,12 @@
             <label for ="minutes10">Minutes</label>
             <input type="number" id="minutes10" name="minutes10">
             <br></div>
+
+            <!-- testing new input format -->
+            <label for="hr-test">Hours/Minutes: </label>
+            <input class="input-hr" type="number" name="hr-test" id="hr-test">
+            <input class="input-min" type="number" name="" id="">
+
         </section>
 
         <div class='flex_col'> 
