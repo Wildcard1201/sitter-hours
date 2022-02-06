@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="media/css/style.css" type="text/css" rel="stylesheet">
-    <script src="src/main.js"></script>
     <title>Sitter Hours Calculator</title>
 </head>
 <body>
@@ -16,7 +15,7 @@
         <button id="populate" onclick="testPopulate()">Populate fields for testing.</button>
     </header>
     <main>
-        <section class='inputs flex_col'>
+        <section id="input" class='inputs flex_col'>
             <div>
             <label for ="hours1">Hours</label>
             <input type="number" id="hours1" name="hours1">
@@ -87,21 +86,28 @@
 
         </section>
 
-        <div class='flex_col'> 
+        <section id="calc" class='flex_col'> 
+            <div>
+                <label for="rate">Rate:</label>
+                <input type="number" name="rate" id="rate" value="4">
+            </div>
             <input class='button' type="button" value="Calculate" onclick="myFunction()">
-        </div>
+        </section>
         
         <!-- output field -->
-        <section class='total flex_row'> 
+        <section id="output" class='total flex_row'> 
             <div class="total-time total-card">
                 <h4>Total Time</h4>
-                <h2 class="card-output" id="output-time">Blank</h2>
+                <h2 class="card-output" id="output-time">Blank Hours <br>Blank Min</h2>
             </div>
             <div class="total-wage total-card">
                 <h4>Total Wage</h4>
-                <h2 class="card-output" id="output-wage">Blank</h2>
+                <h2 class="card-output" id="output-wage">Blank Raw <br>Blank Rounded</h2>
             </div>
         </section>
     </main>
+
+
+    <script src="src/main.js"></script>
 </body>
 </html>
