@@ -51,3 +51,26 @@ function testPopulate() {
     document.getElementById('hours10').value = 7;
     document.getElementById('minutes10').value = 5;
 }
+
+
+// above: working
+// below: experimental
+
+
+function makeInputs() {
+    // make input fields
+}
+
+function getData() {
+    // get data from inputs
+    // get times
+    // get rate
+}
+
+function calculate() {
+    // calculate time and rate
+}
+
+function displayResults() {
+    // display the computed time and wage
+}
