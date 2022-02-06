@@ -62,7 +62,7 @@ function makeInputs() {
 }
 
 function getData() {
-    // get data from inputs
+    // get data from inputs:
     // get times
     // get rate
 }
