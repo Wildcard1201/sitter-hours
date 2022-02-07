@@ -56,11 +56,6 @@ function testPopulate() {
 // above: working
 // below: experimental
 
-
-function makeInputs() {
-    // make input fields
-}
-
 function getData() {
     // get data from inputs:
     // get times
