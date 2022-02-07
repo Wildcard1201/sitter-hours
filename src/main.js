@@ -56,8 +56,16 @@ function testPopulate() {
 // above: working
 // below: experimental
 
+const hrs = document.getElementsByClassName('input-hr')
+
+function testInput() {
+    console.log(`input-hr= ${hrs[0].value} + ${hrs[1].value}`)
+    
+}
+
 function getData() {
     // get data from inputs:
+    
     // get times
     // get rate
 }
