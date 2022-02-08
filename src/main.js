@@ -56,11 +56,15 @@ function testPopulate() {
 // above: working
 // below: experimental
 
-const hrs = document.getElementsByClassName('input-hr')
+const hrs = document.querySelectorAll('.input-hr')
 
 function testInput() {
-    console.log(`input-hr= ${hrs[0].value} + ${hrs[1].value}`)
+    console.log(`input-hr= ${hrs[0].valueAsNumber} + ${hrs[1].valueAsNumber} + ${hrs[2].valueAsNumber}`)
+    console.log('input-hr= ' + (hrs[0].valueAsNumber + hrs[1].valueAsNumber + hrs[2].valueAsNumber))
     
+    for(let i = 0; i < hrs.length; i++) {
+        console.log('array #' + i + ' = ' + hrs[i].valueAsNumber)
+    }
 }
 
 function getData() {
