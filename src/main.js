@@ -30,26 +30,8 @@ function myFunction() {
 }
 
 function testPopulate() {
-    document.getElementById('hours1').value = 5;
-    document.getElementById('minutes1').value = 45;
-    document.getElementById('hours2').value = 7;
-    document.getElementById('minutes2').value = 35;
-    document.getElementById('hours3').value = 4;
-    document.getElementById('minutes3').value = 15;
-    document.getElementById('hours4').value = 8;
-    document.getElementById('minutes4').value = 0;
-    document.getElementById('hours5').value = 4;
-    document.getElementById('minutes5').value = 15;
-    document.getElementById('hours6').value = 8;
-    document.getElementById('minutes6').value = 10;
-    document.getElementById('hours7').value = 6;
-    document.getElementById('minutes7').value = 15;
-    document.getElementById('hours8').value = 8;
-    document.getElementById('minutes8').value = 55;
-    document.getElementById('hours9').value = 4;
-    document.getElementById('minutes9').value = 20;
-    document.getElementById('hours10').value = 7;
-    document.getElementById('minutes10').value = 5;
+    // no longer needed as it was (static values)
+    // todo - rewrite into a random number generator to populate fields dynamically
 }
 
 
@@ -62,7 +44,7 @@ const minElements = document.querySelectorAll('.input-min')
 const hrs = [];
 
 function testInput() {
-    // clear array
+    // clear array - otherwise multiple clicks keeps adding the same entries over and over
     while(hrs.length>0){
         hrs.pop()
     }
@@ -80,13 +62,15 @@ function testInput() {
     }
 
     // test reduce - NaN entries make result also NaN, need to filter out NaN before this step - ** solved above **
-    let sum = hrs.reduce( (prev, curr) => {
-        return prev + curr
-    })
+    let sum = hrs.reduce( (prev, curr) => { return prev + curr })
 
     console.log('sum = ' + sum)
 
-    console.log('inside test function, hrs output: ' + hrs)
+
+    // leftover logic from old version - for reference
+    // const hours = hoursRaw + (Math.floor(minutesRaw/60));
+    // const minutes = (minutesRaw % 60);
+    // document.getElementById("output-time").innerHTML = `${hours} hours <br> ${minutes} minutes`;
 
 }
 
