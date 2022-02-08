@@ -59,28 +59,22 @@ function testPopulate() {
 const hrsElements = document.querySelectorAll('.input-hr')
 const minElements = document.querySelectorAll('.input-min')
 
-var hrs = [];
+const hrs = [];
 
-// hrsElements.forEach( (ele) => {
-//     hrs.push(ele.valueAsNumber)
-// })
-
-
-
-// broken currently 
 function testInput() {
-    hrs = [];
+    while(hrs.length>0){
+        hrs.pop()
+    }
     
     hrsElements.forEach( (ele) => {
     hrs.push(ele.valueAsNumber)
     })
 
-
     for(let i = 0; i < hrs.length; i++) {
         console.log(hrs)
     }
 
-    // console.log(hrs.reduce()); // doesn't work - not a function..  
+    console.log('inside test function, hrs output: ' + hrs)
 
 }
 
