@@ -56,22 +56,32 @@ function testPopulate() {
 // above: working
 // below: experimental
 
-const hrs = document.querySelectorAll('.input-hr')
+const hrsElements = document.querySelectorAll('.input-hr')
+const minElements = document.querySelectorAll('.input-min')
 
+var hrs = [];
+
+// hrsElements.forEach( (ele) => {
+//     hrs.push(ele.valueAsNumber)
+// })
+
+
+
+// broken currently 
 function testInput() {
-    console.log(`input-hr= ${hrs[0].valueAsNumber} + ${hrs[1].valueAsNumber} + ${hrs[2].valueAsNumber}`)
-    console.log('input-hr= ' + (hrs[0].valueAsNumber + hrs[1].valueAsNumber + hrs[2].valueAsNumber))
+    hrs = [];
     
-    for(let i = 0; i < hrs.length; i++) {
-        console.log('array #' + i + ' = ' + hrs[i].valueAsNumber)
-    }
-}
+    hrsElements.forEach( (ele) => {
+    hrs.push(ele.valueAsNumber)
+    })
 
-function getData() {
-    // get data from inputs:
-    
-    // get times
-    // get rate
+
+    for(let i = 0; i < hrs.length; i++) {
+        console.log(hrs)
+    }
+
+    // console.log(hrs.reduce()); // doesn't work - not a function..  
+
 }
 
 function calculate() {
