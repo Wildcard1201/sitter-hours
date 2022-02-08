@@ -62,17 +62,29 @@ const minElements = document.querySelectorAll('.input-min')
 const hrs = [];
 
 function testInput() {
+    // clear array
     while(hrs.length>0){
         hrs.pop()
     }
     
+    // add numerical values for each input to array
     hrsElements.forEach( (ele) => {
-    hrs.push(ele.valueAsNumber)
+        // checks if value is truthy aka not NaN
+        if(ele.valueAsNumber) {
+            hrs.push(ele.valueAsNumber)
+        }
     })
 
     for(let i = 0; i < hrs.length; i++) {
-        console.log(hrs)
+        console.log('hrs entry ' + i + ': ' + hrs[i])
     }
+
+    // test reduce - NaN entries make result also NaN, need to filter out NaN before this step - ** solved above **
+    let sum = hrs.reduce( (prev, curr) => {
+        return prev + curr
+    })
+
+    console.log('sum = ' + sum)
 
     console.log('inside test function, hrs output: ' + hrs)
 
