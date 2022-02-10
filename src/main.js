@@ -81,3 +81,14 @@ function calculate() {
 function displayResults() {
     // display the computed time and wage
 }
+
+document.querySelector('#reset').addEventListener('click', () => {
+    hrs.forEach( (ele) => {
+        hrs.value = '';
+        console.log('reset fired')
+    })
+})
+
+function reset() {
+
+}
