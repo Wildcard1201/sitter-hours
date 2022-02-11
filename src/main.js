@@ -76,6 +76,8 @@ function calculate() {
     console.log('sum hours = ' + sumHrs)
     console.log('sum min = ' + sumMin)
 
+    document.getElementById('output-hrs').innerHTML = sumHrs + ' hours '
+    document.getElementById('output-min').innerHTML = sumMin + ' minutes'
 
     // leftover logic from old version - for reference
     // const hours = hoursRaw + (Math.floor(minutesRaw/60));
