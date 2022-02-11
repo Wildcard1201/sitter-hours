@@ -42,13 +42,17 @@ const hrsElements = document.querySelectorAll('.input-hr')
 const minElements = document.querySelectorAll('.input-min')
 
 const hrs = [];
+const min = [];
 
+document.getElementById('go').addEventListener('click', calculate)
 
-
-function testInput() {
-    // clear array - otherwise multiple clicks keeps adding the same entries over and over
+function calculate() {
+    // clear arrays - otherwise multiple clicks keeps adding the same entries over and over
     while(hrs.length>0){
         hrs.pop()
+    }
+    while(min.length>0){
+        min.pop()
     }
     
     // add numerical values for each input to array
@@ -59,14 +63,18 @@ function testInput() {
         }
     })
 
-    for(let i = 0; i < hrs.length; i++) {
-        console.log('hrs entry ' + i + ': ' + hrs[i])
-    }
+    minElements.forEach( (ele) => {
+        // checks if value is truthy aka not NaN
+        if(ele.valueAsNumber) {
+            min.push(ele.valueAsNumber)
+        }
+    })
 
-    // test reduce - NaN entries make result also NaN, need to filter out NaN before this step - ** solved above **
-    let sum = hrs.reduce( (prev, curr) => { return prev + curr })
+    let sumHrs = hrs.reduce( (prev, curr) => { return prev + curr })
+    let sumMin = min.reduce( (prev, curr) => { return prev + curr })
 
-    console.log('sum = ' + sum)
+    console.log('sum hours = ' + sumHrs)
+    console.log('sum min = ' + sumMin)
 
 
     // leftover logic from old version - for reference
@@ -74,14 +82,6 @@ function testInput() {
     // const minutes = (minutesRaw % 60);
     // document.getElementById("output-time").innerHTML = `${hours} hours <br> ${minutes} minutes`;
 
-}
-
-function calculate() {
-    // calculate time and rate
-}
-
-function displayResults() {
-    // display the computed time and wage
 }
 
 document.getElementById('reset').addEventListener('click', () => {
