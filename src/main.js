@@ -43,6 +43,8 @@ const minElements = document.querySelectorAll('.input-min')
 
 const hrs = [];
 
+
+
 function testInput() {
     // clear array - otherwise multiple clicks keeps adding the same entries over and over
     while(hrs.length>0){
@@ -82,10 +84,12 @@ function displayResults() {
     // display the computed time and wage
 }
 
-document.querySelector('#reset').addEventListener('click', () => {
-    hrs.forEach( (ele) => {
-        hrs.value = '';
-        console.log('reset fired')
+document.getElementById('reset').addEventListener('click', () => {
+    hrsElements.forEach( (ele) => {
+        ele.value = '';
+    })
+    minElements.forEach( (ele) => {
+        ele.value = '';
     })
 })
 
