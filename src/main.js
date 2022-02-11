@@ -93,6 +93,15 @@ document.getElementById('reset').addEventListener('click', () => {
     })
 })
 
-function reset() {
+document.getElementById('populate').addEventListener('click', populate)
 
+function populate() {
+    console.log('populate function fired')
+
+    hrsElements.forEach( (ele) => {
+        ele.value = Math.floor(Math.random() * 10 ) + 1;
+    })
+    minElements.forEach( (ele) => {
+        ele.value = Math.floor(Math.random() * 60 ) + 1;
+    })
 }
