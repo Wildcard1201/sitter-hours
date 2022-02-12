@@ -62,23 +62,20 @@ header h4 {
 .total {
     min-width: 20vw;
     max-width: 35vw;
-    height: 120px;
+    height: auto;
     margin: auto;
     background-color: lightgray;
-    border: 1px solid #0f0;
+    border: 1px solid #ff0000;
 }
 
 .total-card {
     padding: 10px;
     border: 1px solid #f0f;
-    width: 50%;
+    width: 100%;
     position: relative;
 
     overflow: hidden;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .total-card h4 {
