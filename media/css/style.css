@@ -18,6 +18,13 @@ header h4 {
     margin: 5px 0;
 }
 
+main {
+    border: 1px soild red;
+    background-color: rgba(100,100,100,0.2);
+    width: 70vw;
+    margin: 0 auto;
+}
+
 .inputs {
     width: 55%;
     margin: auto;
@@ -41,11 +48,11 @@ header h4 {
     flex-direction: row;
 }
 
-.button{
+.button-go {
     font-size: 24px;
     font-weight: 700;
     display: inline-block;
-    background-color: lightcoral;
+    background-color: #99ff99;
     height: 100px;
     width: 100px;
     border-radius: 25px;
@@ -55,7 +62,7 @@ header h4 {
     cursor: pointer;
 }
 
-.button:hover {
+.button-go:hover {
     background-color: yellow;
 }
 
