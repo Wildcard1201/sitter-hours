@@ -7,13 +7,13 @@
     <title>Sitter Hours Calculator</title>
 </head>
 <body>
-    <header>
+    <header class="section-control">
         <h1>Enter times below and click Go</h1>
         <button id="reset">Reset</button>
         <button id="populate">Populate fields for testing</button>
     </header>
-    <main>
-        <section class='inputs flex_col'>
+    <main class="flex-col">
+        <section class='inputs flex_col test-border'>
             <div class="input-container">
                 <input class="input input-hr" type="number" placeholder="enter hours"> / 
                 <input class="input input-min" type="number" placeholder="enter minutes">
@@ -56,8 +56,8 @@
             </div>
         </section>
 
-        <section id="calc" class='flex_row'> 
-            <div class="rate-container">
+        <section id="calc" class='flex_row test-border'> 
+            <div class="rate-container test-border">
                 <label for="rate">Rate:</label>
                 <input type="number" name="rate" id="rate" value="4">
                 <br>
@@ -65,11 +65,11 @@
                 <input type="radio" name="rounding" id="up">Up
                 <input type="radio" name="rounding" id="none">None
             </div>
-            <input class='button-go' type="button" value="Go!" id="go">
+            <input class='button-go test-border' type="button" value="Go!" id="go">
         </section>
         
         <!-- output field -->
-        <section id="output" class='total flex_col'> 
+        <section id="output" class='total flex_col test-border'> 
             <div class="total-time total-card">
                 <h4>Total Time</h4>
                 <h2 class="card-output" id="output-hrs">Blank Hours</h2>
