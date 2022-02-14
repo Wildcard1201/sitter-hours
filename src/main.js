@@ -3,6 +3,11 @@ const minElements = document.querySelectorAll('.input-min')
 const hrs = [];
 const min = [];
 
+let dollarUS = Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+});
+
 document.getElementById('go').addEventListener('click', calculate)
 
 function calculate() {
@@ -47,8 +52,9 @@ function calculate() {
     const rate = document.getElementById('rate').valueAsNumber
     console.log(rate);
     let wage = (adjustedHrs * rate) + (adjustedMin/60 * rate)
+    console.log('wage raw = ' + wage)
     
-    document.getElementById('output-wage').innerHTML = '$' + wage;
+    document.getElementById('output-wage').innerHTML = dollarUS.format(wage)
 
     // rounding wages attempt
     // doesn't work correctly
