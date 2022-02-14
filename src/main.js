@@ -46,9 +46,19 @@ function calculate() {
 
     const rate = document.getElementById('rate').valueAsNumber
     console.log(rate);
-    const wage = (adjustedHrs * rate) + (adjustedMin/60 * rate)
+    let wage = (adjustedHrs * rate) + (adjustedMin/60 * rate)
     
     document.getElementById('output-wage').innerHTML = '$' + wage;
+
+    // rounding wages attempt
+    // doesn't work correctly
+    if (adjustedMin % 30 < 1) {
+        let minRounded = 30;
+        let wageRounded = (adjustedHrs * rate) + (minRounded/60 * rate)
+        document.getElementById('output-rounded').innerHTML = '$' + wageRounded
+    } else { 
+        document.getElementById('output-rounded').innerHTML = 'No rounding needed'
+    }
 
 }
 
