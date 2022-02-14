@@ -43,6 +43,13 @@ function calculate() {
 
     document.getElementById('output-hrs').innerHTML = adjustedHrs + ' hours '
     document.getElementById('output-min').innerHTML = adjustedMin + ' minutes'
+
+    const rate = document.getElementById('rate').valueAsNumber
+    console.log(rate);
+    const wage = (adjustedHrs * rate) + (adjustedMin/60 * rate)
+    
+    document.getElementById('output-wage').innerHTML = '$' + wage;
+
 }
 
 document.getElementById('reset').addEventListener('click', () => {
