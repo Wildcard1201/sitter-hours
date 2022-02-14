@@ -7,11 +7,11 @@
 header {
     text-align: center;
     color: gray;
+    height: 10vh;
 }
 
 header h1 {
     size: 30px;
-    margin-bottom: 0;
 }
 
 header h4 {
@@ -22,6 +22,7 @@ main {
     border: 1px soild red;
     background-color: rgba(100,100,100,0.2);
     width: 50vw;
+    height: 90vh;
     margin: 0 auto;
 }
 
@@ -111,6 +112,7 @@ main {
 }
 
 #rate {
+    width: 50px;
     border: 2px solid #f0f0d0;
     margin: 5px 0;
     padding: 5px;

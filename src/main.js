@@ -35,14 +35,14 @@ function calculate() {
     console.log('sum hours = ' + sumHrs)
     console.log('sum min = ' + sumMin)
 
-    document.getElementById('output-hrs').innerHTML = sumHrs + ' hours '
-    document.getElementById('output-min').innerHTML = sumMin + ' minutes'
+    let adjustedHrs = sumHrs + (Math.floor(sumMin/60))
+    let adjustedMin = sumMin % 60
 
-    // leftover logic from old version - for reference
-    // const hours = hoursRaw + (Math.floor(minutesRaw/60));
-    // const minutes = (minutesRaw % 60);
-    // document.getElementById("output-time").innerHTML = `${hours} hours <br> ${minutes} minutes`;
+    console.log('adjusted hours = ' + adjustedHrs)
+    console.log('adjusted min = ' + adjustedMin)
 
+    document.getElementById('output-hrs').innerHTML = adjustedHrs + ' hours '
+    document.getElementById('output-min').innerHTML = adjustedMin + ' minutes'
 }
 
 document.getElementById('reset').addEventListener('click', () => {
