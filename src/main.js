@@ -50,7 +50,6 @@ function calculate() {
     document.getElementById('output-min').innerHTML = adjustedMin + ' minutes'
 
     const rate = document.getElementById('rate').valueAsNumber
-    console.log(rate);
     let wage = (adjustedHrs * rate) + (adjustedMin/60 * rate)
     console.log('wage raw = ' + wage)
     
@@ -61,7 +60,7 @@ function calculate() {
     if (adjustedMin % 30 < 1) {
         let minRounded = 30;
         let wageRounded = (adjustedHrs * rate) + (minRounded/60 * rate)
-        document.getElementById('output-rounded').innerHTML = '$' + wageRounded
+        document.getElementById('output-rounded').innerHTML = dollarUS.format(wageRounded)
     } else { 
         document.getElementById('output-rounded').innerHTML = 'No rounding needed'
     }
@@ -89,3 +88,12 @@ function populate() {
         ele.value = Math.floor(Math.random() * 60 ) + 1;
     })
 }
+
+// enter key fires go button
+// issue - also re-fires populate button or any other button that is in focus
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        console.log('enter key detected')
+        calculate();
+    } 
+})
