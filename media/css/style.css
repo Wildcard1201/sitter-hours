@@ -14,25 +14,9 @@ header h1 {
     size: 30px;
 }
 
-header h4 {
-    margin: 5px 0;
-}
-
 main {
-    border: 1px soild red;
-    background-color: rgba(100,100,100,0.2);
-    width: 50vw;
     height: 90vh;
     margin: 0 auto;
-}
-
-.inputs {
-    /* width: 55%; */
-    margin: auto;
-}
-
-.inputs span {
-    font-weight: bold;
 }
 
 .flex_col {
@@ -53,29 +37,30 @@ main {
     font-size: 24px;
     font-weight: 700;
     display: inline-block;
-    background-color: #99ff99;
-    height: 100px;
-    width: 100px;
+    background-color: hsla(120, 100%, 80%, 0.4);
+    height: 70px;
+    width: 320px;
     border-radius: 25px;
     margin: 2px 4px;
     padding: 10px 20px;
     border: 3px solid darkgray;
     cursor: pointer;
+
+    transition: 0.1s ease 0.2s;
 }
 
 .button-go:hover {
-    background-color: yellow;
+    background-color: hsla(120, 100%, 80%, 1.0);
+    transition: 0.1s ease 0.2s;
 }
 
 .total {
     height: auto;
     background-color: lightgray;
-    border: 1px solid #ff0000;
 }
 
 .total-card {
     padding: 10px;
-    border: 1px solid #f0f;
     width: 100%;
     position: relative;
 
@@ -88,8 +73,6 @@ main {
     top: 0;
     left: 0;
     padding: 3px;
-    border: 1px dotted #fff;
-    background-color: #ddd;
 }
 
 .card-output {
@@ -98,7 +81,7 @@ main {
 }
 
 .input {
-    border: 1px solid #ff0000;
+    border: 5px solid #f0f0f0;
     border-radius: 5px;
     margin: 3px 0;
     padding: 5px;
