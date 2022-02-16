@@ -55,11 +55,13 @@ function calculate() {
     
     document.getElementById('output-wage').innerHTML = dollarUS.format(wage)
 
-    // rounding wages attempt
-    // doesn't work correctly
-    if (adjustedMin % 30 < 1) {
+    // round wage up to nearest 1/2 hr
+    if (adjustedMin < 30 && adjustedMin > 1) {
         let minRounded = 30;
         let wageRounded = (adjustedHrs * rate) + (minRounded/60 * rate)
+        document.getElementById('output-rounded').innerHTML = dollarUS.format(wageRounded)
+    } else if (adjustedMin > 30 && adjustedMin < 60) {
+        let wageRounded = (adjustedHrs + 1) * rate
         document.getElementById('output-rounded').innerHTML = dollarUS.format(wageRounded)
     } else { 
         document.getElementById('output-rounded').innerHTML = 'No rounding needed'
