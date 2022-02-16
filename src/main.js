@@ -92,7 +92,7 @@ function populate() {
 }
 
 // enter key fires go button
-// issue - also re-fires populate button or any other button that is in focus **fixed with blur()
+// issue - also re-fires populate button or any other button that is in focus **fixed with blur() *** not fixed anymore?
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         calculate()
