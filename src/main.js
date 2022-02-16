@@ -90,10 +90,10 @@ function populate() {
 }
 
 // enter key fires go button
-// issue - also re-fires populate button or any other button that is in focus
+// issue - also re-fires populate button or any other button that is in focus **fixed with blur()
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-        console.log('enter key detected')
-        calculate();
+        calculate()
+        e.target.blur()
     } 
 })
