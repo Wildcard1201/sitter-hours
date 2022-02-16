@@ -96,6 +96,9 @@ function populate() {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         calculate()
-        e.target.blur()
+        let focused = document.querySelector(':focus')
+        if (focused) {
+            focused.blur()
+        }
     } 
 })
