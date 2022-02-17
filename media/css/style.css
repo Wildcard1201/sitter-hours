@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+.flex-col {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 header {
     text-align: center;
     color: gray;
@@ -19,18 +33,37 @@ main {
     margin: 0 auto;
 }
 
-.flex_col {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+.main-container {
+    width: 50%;
 }
 
-.flex_row {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+.input-container {
+    border: 1px solid red;
+}
+
+.input-group {
+    border: 1px solid green;
+}
+
+.input {
+    border: 5px solid #f0f0f0;
+    border-radius: 5px;
+    margin: 3px 0;
+    padding: 5px;
+    text-align: right;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+.calc-container {
+    border: 1px solid blue;
+}
+
+#rate {
+    width: 75px;
+    border: 2px solid #f0f0d0;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: right;
 }
 
 .button-go {
@@ -54,9 +87,11 @@ main {
     transition: 0.1s ease 0.2s;
 }
 
-.total {
-    height: auto;
+.output-field {
+    height: 200px;
+    width: 80%;
     background-color: lightgray;
+    border: 1px dashed orange;
 }
 
 .total-card {
@@ -80,28 +115,13 @@ main {
     left: 60px;
 }
 
-.input {
-    border: 5px solid #f0f0f0;
-    border-radius: 5px;
-    margin: 3px 0;
-    padding: 5px;
-    text-align: right;
-    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
-}
-
 .rate-container {
     border: 1px solid #0f0;
     background-color: #99ff99;
     padding: 5px;
 }
 
-#rate {
-    width: 75px;
-    border: 2px solid #f0f0d0;
-    margin: 5px 0;
-    padding: 5px;
-    text-align: right;
-}
+
 
 .test-border {
     border: 3px dashed yellow;
