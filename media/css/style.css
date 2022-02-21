@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .flex-col {
@@ -21,6 +22,7 @@ body {
 .flex-row {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     flex-direction: row;
 }
 
@@ -28,10 +30,19 @@ header {
     text-align: center;
     color: gray;
     height: 15vh;
+    position: relative;
+    align-items: center;
+    border-bottom: 5px solid rgba(255, 233, 31, 0.5);
 }
 
 header h1 {
-    size: 30px;
+    font-size: 3em;
+}
+
+.testing {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 main {
@@ -44,7 +55,7 @@ main {
 }
 
 .input-container {
-    border: 1px solid red;
+    border: 1px dashed red;
 }
 
 .input-group {
@@ -71,7 +82,7 @@ main {
 }
 
 .calc-container {
-    border: 1px solid blue;
+    border: 1px dashed blue;
 }
 
 .rate-container {
