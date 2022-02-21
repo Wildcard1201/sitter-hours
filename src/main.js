@@ -87,12 +87,10 @@ function populate() {
         ele.value = Math.floor(Math.random() * 10 ) + 1;
     })
     minElements.forEach( (ele) => {
-        ele.value = Math.floor(Math.random() * 60 ) + 1;
+        ele.value = (Math.floor(Math.random() * 11 ) + 1) * 5;
     })
 }
 
-// enter key fires go button
-// issue - also re-fires populate button or any other button that is in focus **fixed with blur() *** not fixed anymore?
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         calculate()
