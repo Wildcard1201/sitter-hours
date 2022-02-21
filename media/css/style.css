@@ -65,6 +65,11 @@ main {
     width: 40%;
 }
 
+.input:focus {
+    border: 3px dashed red;
+    outline: noneinput ;
+}
+
 .calc-container {
     border: 1px solid blue;
 }
