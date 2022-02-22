@@ -76,6 +76,10 @@ document.getElementById('reset').addEventListener('click', () => {
     minElements.forEach( (ele) => {
         ele.value = '';
     })
+    document.getElementById('output-hrs').innerHTML = '';
+    document.getElementById('output-min').innerHTML = '';
+    document.getElementById('output-wage').innerHTML = '';
+    document.getElementById('output-rounded').innerHTML = '';
 })
 
 document.getElementById('populate').addEventListener('click', populate)
