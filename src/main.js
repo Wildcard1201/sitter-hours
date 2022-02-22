@@ -98,9 +98,21 @@ function populate() {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         calculate()
-        let focused = document.querySelector(':focus')
+        
+    } 
+
+    if (e.key === 'p') {
+        populate();
+    }
+    
+    // *** this is actually not a declared function - need to declare and separate from event listener above to use it here
+    // if (e.key === 'r') {
+    //     reset();
+    // }
+
+    let focused = document.querySelector(':focus')
         if (focused) {
             focused.blur()
         }
-    } 
 })
+
