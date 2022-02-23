@@ -69,7 +69,10 @@ function calculate() {
 
 }
 
-document.getElementById('reset').addEventListener('click', () => {
+document.getElementById('reset').addEventListener('click', reset)
+document.getElementById('populate').addEventListener('click', populate)
+
+function reset() {
     hrsElements.forEach( (ele) => {
         ele.value = '';
     })
@@ -80,9 +83,7 @@ document.getElementById('reset').addEventListener('click', () => {
     document.getElementById('output-min').innerHTML = '';
     document.getElementById('output-wage').innerHTML = '';
     document.getElementById('output-rounded').innerHTML = '';
-})
-
-document.getElementById('populate').addEventListener('click', populate)
+}
 
 function populate() {
     console.log('populate function fired')
@@ -97,19 +98,14 @@ function populate() {
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-        calculate()
-        
+        calculate()      
     } 
-
     if (e.key === 'p') {
         populate();
+    } 
+    if (e.key === 'r') {
+        reset();
     }
-    
-    // *** this is actually not a declared function - need to declare and separate from event listener above to use it here
-    // if (e.key === 'r') {
-    //     reset();
-    // }
-
     let focused = document.querySelector(':focus')
         if (focused) {
             focused.blur()
