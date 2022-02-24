@@ -167,6 +167,11 @@ main {
 .card-output {
     top: 20px;
     left: 60px;
+    width: 40%;
+}
+
+#output-hrs, #output-wage {
+    text-align: right;
 }
 
 .total-card i {
