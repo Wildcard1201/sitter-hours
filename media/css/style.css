@@ -27,12 +27,13 @@ body {
 }
 
 header {
+    background: linear-gradient(0deg, hsl(54, 100%, 72%), #dddddd);
     text-align: center;
     color: gray;
     height: 15vh;
     position: relative;
     align-items: center;
-    border-bottom: 5px solid rgba(255, 233, 31, 0.5);
+    border-bottom: 5px solid hsl(54, 100%, 72%);
 }
 
 header h1 {
@@ -56,7 +57,7 @@ header h1 {
 }
 
 .testing button:hover {
-    background-color: rgba(255, 233, 31, 0.5);
+    background-color: hsl(54, 100%, 72%);
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -182,3 +183,4 @@ main {
 .test-border {
     border: 3px dashed yellow;
 }
+
