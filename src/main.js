@@ -106,9 +106,9 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'r') {
         reset();
     }
-    let focused = document.querySelector(':focus')
-        if (focused) {
-            focused.blur()
-        }
+    // let focused = document.querySelector(':focus')
+    //     if (focused) {
+    //         focused.blur()
+    //     }
 })
 
