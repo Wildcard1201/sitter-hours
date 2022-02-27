@@ -93,7 +93,8 @@ main {
 }
 
 .input:focus {
-    border: 3px dashed red;
+    /* border: 3px dashed red; */
+    box-shadow: 5px 5px 5px 0px hsla(120, 100%, 80%, 1);
     outline: none;
 }
 
