@@ -84,6 +84,7 @@ main {
 .input {
     border: 2px solid #8b8b8b;
     border-radius: 5px;
+    background-color: #f7f7f7;
     margin: 5px;
     padding: 5px;
     text-align: right;
@@ -96,6 +97,7 @@ main {
     /* border: 3px dashed red; */
     box-shadow: 5px 5px 5px 0px hsla(120, 100%, 80%, 1);
     outline: none;
+    background-color: #fff;
 }
 
 .calc-container {
