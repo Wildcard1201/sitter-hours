@@ -13,6 +13,8 @@
         <div class="testing">
             <button id="reset" tabindex="-1">Reset</button>
             <button id="populate" tabindex="-1">Populate</button>
+            <button id="export" tabindex="-1">Export</button>
+            <button id="print" tabindex="-1">Print</button>
         </div>
     </header>
     <main class="flex-row">
@@ -60,10 +62,10 @@
         </section>
 
         <section class="calc-container main-container flex-col">
-            <div id="calc" class='flex_row '>
-                <div class="rate-container">
+            <div id="calc" class='flex-col '>
+                <div class="rate-container flex-row">
                     <label for="rate">Rate: $</label>
-                    <input type="number" id="rate" value="4">
+                    <input type="number" id="rate" value="4.00" step="0.25">
                 </div>
                 <input class='button-go ' type="button" value="Go!" id="go">
             </div>
