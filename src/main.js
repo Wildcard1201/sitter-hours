@@ -83,6 +83,8 @@ function reset() {
     document.getElementById('output-min').innerHTML = '';
     document.getElementById('output-wage').innerHTML = '';
     document.getElementById('output-rounded').innerHTML = '';
+
+    tabReset()
 }
 
 function populate() {
@@ -99,7 +101,7 @@ function populate() {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         calculate()   
-        unfocus()   
+        blur()   
     } 
     if (e.key === 'p') {
         populate();
@@ -110,10 +112,11 @@ document.addEventListener('keydown', (e) => {
     
 })
 
-function unfocus() {
-    let focused = document.querySelector(':focus')
-        if (focused) {
-            focused.blur()
-        }
+function blur() {
+    document.activeElement.blur()
+}
+
+function tabReset() {
+    document.querySelector('#tab-anchor').focus()
 }
 
