@@ -98,7 +98,8 @@ function populate() {
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-        calculate()      
+        calculate()   
+        unfocus()   
     } 
     if (e.key === 'p') {
         populate();
@@ -106,9 +107,13 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'r') {
         reset();
     }
-    // let focused = document.querySelector(':focus')
-    //     if (focused) {
-    //         focused.blur()
-    //     }
+    
 })
+
+function unfocus() {
+    let focused = document.querySelector(':focus')
+        if (focused) {
+            focused.blur()
+        }
+}
 
