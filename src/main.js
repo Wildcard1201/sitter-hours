@@ -103,11 +103,17 @@ document.addEventListener('keydown', (e) => {
         calculate()   
         blur()   
     } 
-    if (e.key === 'p') {
+    if (e.key === 't') {
         populate();
     } 
     if (e.key === 'r') {
         reset();
+    }
+    if (e.key === 'e') {
+        alert('Exporting not supported yet')
+    }
+    if (e.key === 'p') {
+        alert('Printing not supported yet')
     }
     
 })
