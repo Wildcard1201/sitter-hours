@@ -9,6 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    background: linear-gradient(0deg, #fff 75%, hsl(54, 100%, 72%) , #b3b3b3);
 }
 
 .flex-col {
@@ -27,7 +28,8 @@ body {
 }
 
 header {
-    background: linear-gradient(330deg, hsl(54, 100%, 72%), #b3b3b3);
+    /* background: linear-gradient(0deg, #fff, hsl(54, 100%, 72%), #b3b3b3); */
+    background-size: 200%;
     text-align: center;
     color: gray;
     height: 15vh;
@@ -54,15 +56,17 @@ header h1 {
     padding: 2px 8px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     border-radius: 25px;
-    color: rgb(216, 216, 216);
-    transition: 0.1s linear 0.1s;
+    color: #fff;
 }
 
 .testing button:hover {
     /* background-color: hsla(54, 100%, 72%, 0.5); */
-    background: linear-gradient(270deg, #dddddd 10%, hsl(54, 100%, 72%));
+    background: linear-gradient(270deg, #dddddd 10%, hsl(54, 100%, 72%) );
     color: gray;
+    font-weight: 600;
     border: 1px solid rgba(255, 255, 255, 1);
+
+    transition: 0.1s linear 0.1s;
 }
 
 main {
