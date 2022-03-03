@@ -109,8 +109,8 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'r') {
         reset();
     }
-    if (e.key === 'e') {
-        alert('Exporting not supported yet')
+    if (e.key === 's') {
+        alert('Saving not supported yet')
     }
     if (e.key === 'p') {
         alert('Printing not supported yet')

@@ -53,19 +53,23 @@ header h1 {
 
 .testing button {
     background-color: rgba(255, 255, 255, 0.0);
-    margin: 2px 0;
-    padding: 2px 8px;
+    margin: 3px 3px;
+    padding: 5px 15px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     border-radius: 25px;
     color: #fff;
+    text-shadow: 0 0 2px gray;
+
+    transition: 0.1s linear 0.1s;
 }
 
 .testing button:hover {
+    background-color: hsla(120, 100%, 80%, 0.2);
     /* background-color: hsla(54, 100%, 72%, 0.5); */
-    background: linear-gradient(270deg, #dddddd 10%, hsl(54, 100%, 72%) );
     color: gray;
+    text-shadow: none;
     font-weight: 600;
-    border: 1px solid rgba(255, 255, 255, 1);
+    /* border: 1px solid rgba(255, 255, 255, 1); */
 
     transition: 0.1s linear 0.1s;
 }
@@ -161,7 +165,6 @@ main {
     position: relative;
 
     overflow: hidden;
-    /* text-align: center; */
 
     display: flex;
     justify-content: center;
@@ -170,13 +173,6 @@ main {
 
 .total-card h2 {
     display: inline;
-}
-
-.total-card h4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 3px;
 }
 
 .card-output {
