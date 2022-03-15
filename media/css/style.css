@@ -88,7 +88,6 @@ main {
 }
 
 .input-group {
-    /* border: 1px solid green; */
     width: 80%;
     display: flex;
     justify-content: center;
@@ -102,8 +101,9 @@ main {
     padding: 5px;
     text-align: right;
     box-shadow: 5px 5px 5px 0px rgba(255, 233, 31, 0.5);
-
     width: 40%;
+    font-size: 0.9em;
+    font-weight: 600;
 }
 
 .input:focus {
