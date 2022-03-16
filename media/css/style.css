@@ -49,15 +49,17 @@ header h1 {
     left: 0;
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .testing button {
-    background-color: rgba(255, 255, 255, 0.0);
-    margin: 3px 3px;
+    background-color: hsla(120, 100%, 80%, 0.2);
+    margin-top: 5px;
+    margin-left: 10px;
     padding: 5px 15px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     border-radius: 25px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     text-shadow: 0 0 2px gray;
 
     transition: 0.1s linear 0.1s;
@@ -68,9 +70,9 @@ header h1 {
     /* background-color: hsla(54, 100%, 72%, 0.5); */
     color: gray;
     text-shadow: none;
-    font-weight: 600;
+    font-weight: 500;
     /* border: 1px solid rgba(255, 255, 255, 1); */
-
+    transform: scaleX(110%);
     transition: 0.1s linear 0.1s;
 }
 
