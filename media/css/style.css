@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background: linear-gradient(0deg, #fff 75%, hsl(54, 100%, 72%) , #b3b3b3);
+    background: linear-gradient(0deg, #fff 80%, hsl(54, 100%, 72%) , hsl(0, 0%, 80%));
 }
 
 .flex-col {
@@ -49,31 +49,32 @@ header h1 {
     left: 0;
     display: flex;
     flex-direction: column;
-    padding: 5px;
 }
 
 .testing button {
-    background-color: hsla(120, 100%, 80%, 0.2);
-    margin-top: 5px;
-    margin-left: 10px;
+    background-color: hsla(0, 0%, 100%, 0.4);
+    margin: 3px 10px;
     padding: 5px 15px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
+    /* border: 2px solid rgba(0, 0, 0, 0.0); */
+    /* border: 1px solid hsla(0, 0%, 0%, 0.1); */
+    border: none;
+    box-shadow: 0 0 1px 1px hsla(0, 0%, 100%, 0.4);
     border-radius: 25px;
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 0 0 2px gray;
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 400;
+    text-shadow: 0 0 2px hsl(0, 0%, 45%);
 
     transition: 0.1s linear 0.1s;
 }
 
 .testing button:hover {
-    background-color: hsla(120, 100%, 80%, 0.2);
-    /* background-color: hsla(54, 100%, 72%, 0.5); */
-    color: gray;
+    background-color: hsla(120, 100%, 80%, 0.4);
+    color: hsl(0, 0%, 35%);
     text-shadow: none;
     font-weight: 500;
-    /* border: 1px solid rgba(255, 255, 255, 1); */
     transform: scaleX(110%);
     transition: 0.1s linear 0.1s;
+    border-width: 2px;
 }
 
 main {
