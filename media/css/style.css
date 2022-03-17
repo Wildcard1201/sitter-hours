@@ -52,6 +52,7 @@ header h1 {
 
     border: 1px solid orange;
     background-color: gray;
+    padding: 5px;
 }
 
 .menu-open {
@@ -70,7 +71,8 @@ header h1 {
 
 .testing button {
     background-color: hsla(0, 0%, 100%, 0.4);
-    margin: 3px 10px;
+    margin: 5px 10px;
+    margin-left: 45px;
     padding: 5px 15px;
     /* border: 2px solid rgba(0, 0, 0, 0.0); */
     /* border: 1px solid hsla(0, 0%, 0%, 0.1); */
