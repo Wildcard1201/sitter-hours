@@ -71,6 +71,8 @@ function calculate() {
 
 document.getElementById('reset').addEventListener('click', reset)
 document.getElementById('populate').addEventListener('click', populate)
+document.getElementById('save').addEventListener('click', save)
+document.getElementById('print').addEventListener('click', print)
 
 function reset() {
     hrsElements.forEach( (ele) => {
@@ -98,22 +100,30 @@ function populate() {
     })
 }
 
+function save() {
+    alert('Saving not supported yet')
+}
+
+function print() {
+    alert('Printing not supported yet')
+}
+
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         calculate()   
         blur()   
     } 
     if (e.key === 't') {
-        populate();
+        populate()
     } 
     if (e.key === 'r') {
-        reset();
+        reset()
     }
     if (e.key === 's') {
-        alert('Saving not supported yet')
+        save()
     }
     if (e.key === 'p') {
-        alert('Printing not supported yet')
+        print()
     }
     
 })
