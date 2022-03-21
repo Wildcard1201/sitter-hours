@@ -165,13 +165,21 @@ footer {
     left: 0;
 }
 
+nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+nav > * {
+    margin: 0 5px;
+}
+
 nav i {
-    margin: 5px;
     padding: 5px;
 }
 
 nav button {
-    margin: 5px;
     padding: 5px 15px;
 }
 
