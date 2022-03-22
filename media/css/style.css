@@ -146,11 +146,21 @@ nav i {
     padding: 5px;
 }
 
+nav h6 {
+    font-size: 1em;
+}
+
 nav button {
     padding: 5px 15px;
     height: 34px;
     border: 1px solid #aaa;
     border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.footer-group > * {
+    display: inline-block;
 }
 
 #rate {
