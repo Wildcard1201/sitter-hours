@@ -136,3 +136,18 @@ function tabReset() {
     document.querySelector('#tab-anchor').focus()
 }
 
+const dateCheck = document.getElementById('dates-toggle')
+const dates = document.querySelectorAll('.date')
+
+
+
+dateCheck.addEventListener('click', toggleDates)
+
+function toggleDates() {
+    if (dateCheck.checked) {
+        dates.style.display = 'none'
+    } else {
+        dates.style.display = 'true'
+    }
+    alert(dateCheck.checked)
+}
