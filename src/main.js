@@ -145,7 +145,7 @@ dateCheck.addEventListener('click', toggleDates)
 
 function toggleDates() {
     if (!dateCheck.checked) {
-        dates.style.display = 'none'
+        date.style.display = 'none'
         alert('dates hidden')
     } else {
         dates.style.display = 'true'
