@@ -163,6 +163,11 @@ nav button {
 
 nav input {
     border: 1px solid blue;
+    height: 30px;
+    width: 60px;
+    text-align: right;
+    font-size: 1em;
+
 }
 
 .footer-group {
@@ -172,7 +177,7 @@ nav input {
 }
 
 .footer-group > * {
-    margin: 0 3px;
+    margin: 3px 3px;
 }
 
 #go {
