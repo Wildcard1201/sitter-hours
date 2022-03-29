@@ -125,6 +125,15 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'p') {
         print()
     }
+    if (e.key === 'd') {
+        if (dateCheck.checked) {
+            dateCheck.checked = false
+            toggleDates()
+        } else if (!dateCheck.checked) {
+            dateCheck.checked = true
+            toggleDates()
+        }
+    }
     
 })
 
