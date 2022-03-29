@@ -52,9 +52,8 @@ main {
     width: 50%;
 }
 
-/* doesn't work like it should */
 .date {
-    transition: visibility 0.2s linear 0.5s;
+    transition: 0.05s linear 0.4s;
 }
 
 .input-container {
