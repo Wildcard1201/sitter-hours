@@ -57,7 +57,7 @@ main {
 }
 
 .date {
-    transition: 0.8s linear 0.3s;
+    transition: 0.8s ease-out 0.3s;
 }
 
 .input-container {

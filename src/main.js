@@ -167,3 +167,16 @@ function toggleDates() {
         })
     }
 }
+
+
+// control number of fields
+
+const fieldsInput = document.querySelector('#fields')
+const fieldsButton = document.querySelector('#change-fields')
+
+fieldsButton.addEventListener('click', updateFields)
+
+function updateFields() {
+    let fieldsNumber = fieldsInput.value
+    alert('Number of fields: ' + fieldsNumber)
+}
