@@ -178,5 +178,5 @@ fieldsButton.addEventListener('click', updateFields)
 
 function updateFields() {
     let fieldsNumber = fieldsInput.value
-    alert('Number of fields: ' + fieldsNumber)
+    alert('Number of fields: ' + fieldsNumber + ' This feature is not quite supported yet')
 }
