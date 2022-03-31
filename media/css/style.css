@@ -137,6 +137,9 @@ footer {
     bottom: 0;
     left: 0;
     width: 100vw;
+
+    height: 50px;
+    border: 1px solid orange;
 }
 
 nav {
@@ -144,6 +147,8 @@ nav {
     justify-content: left;
     align-items: center;
     width: 100vw;
+
+    height: 100%;
 }
 
 nav > * {
@@ -158,13 +163,18 @@ nav h6 {
     font-size: 1em;
 }
 
-nav button {
+.button {
     padding: 5px 15px;
     height: 34px;
     border: 1px solid #aaa;
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+    background-color: #ddd;
+}
+
+.button:hover {
+    background-color: orange;
 }
 
 nav input {
@@ -183,10 +193,10 @@ nav input {
 
 
     border: 1px solid gray;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 3px;
     margin: 3px 3px;
-    height: 100%;
+    height: 90%;
 }
 
 .footer-group > * {
@@ -207,8 +217,8 @@ nav input {
     display: inline;
     border-radius: 15%;
 
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
 
 #go:hover {
