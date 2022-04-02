@@ -179,6 +179,7 @@ nav h6 {
 
 nav input {
     border: 1px solid gray;
+    border-radius: 5px;
     height: 30px;
     width: 60px;
     text-align: right;
@@ -214,14 +215,18 @@ nav input {
     right: 0;
     bottom: 0;
     display: inline;
-    border-radius: 15%;
+    border-radius: 5px;
 
     height: 60px;
-    width: 60px;
+    /* width: 60px; */
+    padding: 0 10px;
+    transition: 0.5s ease 0.1s;
 }
 
 #go:hover {
-    background-color: orange;
+    background-color: var(--yellow);
+    text-shadow: 0 0 5px gray;
+    transition: 0.5s ease 0.1s;
 }
 
 /* toggle switches */
