@@ -137,9 +137,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100vw;
-
     height: 50px;
-    border: 1px solid orange;
 }
 
 nav {
@@ -185,7 +183,6 @@ nav input {
     width: 60px;
     text-align: right;
     font-size: 1em;
-
 }
 
 .footer-group {
@@ -272,11 +269,4 @@ nav input {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-
-
-  /* for testing */
-
-  .date {
-      /* display: none; */
   }
