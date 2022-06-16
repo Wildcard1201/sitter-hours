@@ -81,10 +81,17 @@ function reset() {
     minElements.forEach( (ele) => {
         ele.value = '';
     })
-    document.getElementById('output-hrs').innerHTML = '';
-    document.getElementById('output-min').innerHTML = '';
-    document.getElementById('output-wage').innerHTML = '';
-    document.getElementById('output-rounded').innerHTML = '';
+    // document.getElementById('output-hrs').innerHTML = '';
+    // document.getElementById('output-min').innerHTML = '';
+    // document.getElementById('output-wage').innerHTML = '';
+    // document.getElementById('output-rounded').innerHTML = '';
+
+    // more DRY reset of output
+    document.querySelectorAll('.card-output').forEach(e => {
+        e.innerHTML = '';
+    })
+    
+    
 
     tabReset()
 }
