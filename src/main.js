@@ -81,6 +81,8 @@ function reset() {
     minElements.forEach( (ele) => {
         ele.value = '';
     })
+
+    // to be deleted
     // document.getElementById('output-hrs').innerHTML = '';
     // document.getElementById('output-min').innerHTML = '';
     // document.getElementById('output-wage').innerHTML = '';
@@ -91,8 +93,6 @@ function reset() {
         e.innerHTML = '';
     })
     
-    
-
     tabReset()
 }
 
