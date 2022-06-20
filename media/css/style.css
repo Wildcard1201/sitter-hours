@@ -157,6 +157,8 @@ nav i {
     visibility: hidden;
     padding: 5px;
     font-size: 1.75em;
+    position: absolute;
+    left: -30px;
 }
 
 nav h6 {
@@ -281,5 +283,7 @@ nav input {
   @media screen and (max-width: 500px) {
     nav i {
         visibility: visible;
+        position: relative;
+        left: 0;
     }
   }
