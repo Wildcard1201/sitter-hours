@@ -252,6 +252,8 @@ nav input {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
+
+    border-radius: 5px;
   }
 
   .slider::before {
@@ -264,6 +266,8 @@ nav input {
     background-color: #fff;
     -webkit-transition: .4s;
     transition: .4s;
+
+    border-radius: 5px;
   }
 
   input:checked + .slider {
