@@ -165,7 +165,9 @@ nav h6 {
     font-size: 1em;
 }
 
-.button {
+.footer-button {
+    flex: 1 auto;
+    
     padding: 5px 15px;
     height: 90%;
     border: 1px solid #aaa;
@@ -176,7 +178,7 @@ nav h6 {
     transition: background-color 0.3s ease 0.1s;
 }
 
-.button:hover {
+.footer-button:hover {
     background-color: orange;
     transition: background-color 0.3s ease 0.0s;
 }
@@ -191,6 +193,8 @@ nav input {
 }
 
 .footer-group {
+    flex: 2 auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +204,7 @@ nav input {
     border-radius: 5px;
     padding: 3px;
     margin: 3px 3px;
-    height: 90%;
+    height: 85%;
 }
 
 .footer-group > * {
@@ -215,13 +219,13 @@ nav input {
     cursor: pointer;
     /* margin-left: auto; */
     margin: 8px 8px;
-    position: absolute;
+    
     right: 0;
     bottom: 0;
-    display: inline;
+    /* display: inline; */
     border-radius: 5px;
-
-    height: 60px;
+    height: 90%;
+    /* height: 60px; */
     /* width: 60px; */
     padding: 0 10px;
     transition: 0.5s ease 0.1s;
