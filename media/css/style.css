@@ -13,7 +13,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background: linear-gradient(0deg, #fff 80%, hsl(54, 100%, 72%) , hsl(0, 0%, 80%));
 }
 
 .flex-col {
@@ -32,15 +31,15 @@ body {
 }
 
 header {
-    /* background: linear-gradient(0deg, #fff, hsl(54, 100%, 72%), #b3b3b3); */
-    background-size: 200%;
+    
+    height: 25vh;
+    position: relative;
+    background-color: var(--yellow);
     text-align: center;
     color: #5d5d5d;
-    height: 15vh;
-    position: relative;
     align-items: center;
     text-shadow: 0 0 3px #fff;
-    /* border-bottom: 5px solid hsl(54, 100%, 72%); */
+    border-bottom: 5px solid gray;
 }
 
 header h1 {
