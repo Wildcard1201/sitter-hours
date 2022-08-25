@@ -184,6 +184,7 @@ nav h6 {
     border: 1px solid #aaa;
     border-radius: 5px;
     font-size: 1em;
+    font-weight: 500;
     cursor: pointer;
     background-color: #ddd;
     transition: background-color 0.3s ease 0.1s;
