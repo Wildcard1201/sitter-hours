@@ -145,7 +145,7 @@ main {
 
 footer {
     position: sticky;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     width: 100vw;
     height: 50px;
@@ -155,7 +155,8 @@ nav {
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 100vw;
+    margin: 0 auto;
+    width: 97%;
 
     height: 100%;
 }
