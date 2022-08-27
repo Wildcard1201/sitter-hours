@@ -2,6 +2,7 @@
 
 :root {
     --yellow: hsl(54, 100%, 72%);
+    --button-bg: hsl(0, 0%, 58%);
 }
 
 *, *:before, *:after {
@@ -184,10 +185,10 @@ nav h6 {
     height: 90%;
     border: 1px solid #aaa;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
     cursor: pointer;
-    background-color: #ddd;
+    background-color: var(--button-bg);
     transition: background-color 0.3s ease 0.1s;
 }
 
@@ -266,7 +267,7 @@ nav input {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--button-bg);
     -webkit-transition: .4s;
     transition: .4s;
 
